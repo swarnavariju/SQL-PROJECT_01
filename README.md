@@ -21,17 +21,17 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
   ```sql
     CREATE TABLE retail_sales(
- transactions_id int primary key,
- sale_date date,
- sale_time time,
- customer_id int,
- gender	varchar(10),
- age int,
- category varchar(20),
- quantity int,
- price_per_unit	float,
- cogs float,
- total_sale float
+	 transactions_id int primary key,
+	 sale_date date,
+	 sale_time time,
+	 customer_id int,
+	 gender	varchar(10),
+	 age int,
+	 category varchar(20),
+	 quantity int,
+	 price_per_unit	float,
+	 cogs float,
+	 total_sale float
 
 );
 ```
@@ -46,30 +46,32 @@ This project is designed to demonstrate SQL skills and techniques typically used
     --data cleaning --
 
 select * from retail_sales
-where transactions_id is null
-or sale_date is null
-or sale_time is null
-or customer_id is null
-or gender is null
-or age is null
-or category is null
-or quantity is null
-or price_per_unit is null
-or cogs is null
-or total_sale is null;
+	where
+		transactions_id is null
+		or sale_date is null
+		or sale_time is null
+		or customer_id is null
+		or gender is null
+		or age is null
+		or category is null
+		or quantity is null
+		or price_per_unit is null
+		or cogs is null
+		or total_sale is null;
 
 delete from retail_sales 
-where transactions_id is null
-or sale_date is null
-or sale_time is null
-or customer_id is null
-or gender is null
-or age is null
-or category is null
-or quantity is null
-or price_per_unit is null
-or cogs is null
-or total_sale is null;
+	where
+		transactions_id is null
+		or sale_date is null
+		or sale_time is null
+		or customer_id is null
+		or gender is null
+		or age is null
+		or category is null
+		or quantity is null
+		or price_per_unit is null
+		or cogs is null
+		or total_sale is null;
 
 -- DATA EXPLORATION --
 
